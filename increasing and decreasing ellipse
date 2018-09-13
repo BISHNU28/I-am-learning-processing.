@@ -1,0 +1,37 @@
+
+float w=250;
+float x=250;
+float y=50;
+float z=50;
+float wDelta=0.1;
+float yDelta=1;
+float zDelta=1;
+
+
+
+void setup() {
+  size(500,500);
+  frameRate(50);
+}
+void draw() {
+  background(0);
+  fill(255);
+ 
+   ellipse(w,x,y,z);
+   y=y+yDelta;
+   if (y>height) {yDelta=-1;}
+   if (y<0) {yDelta=1;}
+   z=z+zDelta;
+   if (z>width) {zDelta=-1;}
+   if (z<0) {zDelta=1;}
+   
+   
+   
+  
+  
+  
+  
+  
+  
+  
+}
